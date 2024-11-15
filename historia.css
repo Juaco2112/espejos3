@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #4d5aca;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    background: url(2.jpg );
+    background: url(7.0.jpg );
+    background-size: cover;
+    
+}
+.container{
+    position: relative;
+    display: flex;
+    -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,#0004);
+}
+.container.box {
+
+    position: relative;
+    
+    width: 320px;
+    
+    height: 400px;
+    
+    background:#444;
+    
+    margin: 0 20px;
+    
+    border-radius: 20px;
+    
+    background: linear-gradient(45deg, #a41f36 25%,
+    
+    #444 25%, #444 50%, #a41f36 50%, #a41f36 75%, #444 75%, #444 100%);
+    
+    background-size: 40px 40px;
+    
+    filter: grayscale(1);
+    animation: animateBg 0.5s linear infinite;
+
+animation-play-state: paused;
+
+transition: filter 1s;
+
+display: flex;
+
+justify-content: center;
+
+}
+
+.container.box:nth-child(2) {
+
+background: linear-gradient(135deg, 1#444 25%, #444 50%, #e6b952 25%,
+
+#e6b952 50%, #e6b952 75%, 1#444 75%, #444 100%);
+
+background-size: 40px 40px;
+
+}
+
+.container.box:hover {
+
+animation-play-state: running;
+
+filter: grayscale(0);
+
+}
+
+@keyframes animateBg {
+
+0% {
+
+background-position: 0;
+
+}
+
+100%
+
+{
+
+background-position: 40px;
+
+}
+
+}
+container.box img {
+
+    position: absolute;
+    
+    bottom: 0;
+    
+    height: 90%;
+    
+    transition: height 0.5s;
+    
+    }
+    
+.container.box:hover img {
+    
+    height: 480px;
+    
+    }
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: rgb(86, 179, 202);
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    margin: 20px 0;
+}
+
+img {
+    max-width: 50%;
+    animation: float 2s linear infinite;
+    height: auto;
+}
+@keyframes float{
+    0%, 100%{
+        transform: translate(0rem);
+    }
+    50%{
+        transform: translate(-1.5rem);
+    }
+        
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
